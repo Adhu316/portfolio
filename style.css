@@ -1,10 +1,10 @@
-/* General Layout */
+/* ==== Base Styling ==== */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #222;
-  background-color: #f9f9f9;
+  background-color: #000000; /* Dark background */
+  color: #ffffff;            /* Default text color */
 }
 
 .container {
@@ -15,18 +15,19 @@ body {
   margin: auto;
 }
 
-/* Profile */
+/* ==== Profile Image ==== */
 .profile-pic {
   width: 120px;
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
   margin: 20px auto;
   display: block;
 }
 
+/* ==== Header ==== */
 header {
   text-align: center;
   padding-bottom: 20px;
@@ -35,38 +36,53 @@ header {
 header h1 {
   margin: 10px 0 0;
   font-size: 2.2rem;
+  color: #ffffff;
 }
 
 header p {
   font-size: 1rem;
   max-width: 700px;
   margin: 0 auto;
-  color: #555;
+  color: #cccccc;
+}
+
+/* ==== Social Icons ==== */
+.socials {
+  margin-top: 10px;
 }
 
 .socials a {
   margin: 0 10px;
-  color: #333;
+  color: #ffffff;
   font-size: 1.4rem;
   transition: color 0.3s ease;
 }
 
 .socials a:hover {
-  color: #0072b1; /* LinkedIn blue */
+  color: #00b7ff;
 }
 
-/* Sections */
+/* ==== Sections ==== */
 section {
   margin-top: 50px;
 }
 
 h2 {
   font-size: 1.8rem;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid #444;
   padding-bottom: 6px;
   margin-bottom: 20px;
+  color: #ffffff;
 }
 
+.about p,
+.contact p,
+.timeline li,
+.projects p {
+  color: #dddddd;
+}
+
+/* ==== Timeline ==== */
 .timeline ul {
   list-style: none;
   padding-left: 0;
@@ -79,51 +95,57 @@ h2 {
 }
 
 .timeline li::before {
-  content: \"•\";
+  content: "•";
   position: absolute;
   left: 0;
-  color: #007acc;
+  color: #00b7ff;
 }
 
-/* Projects */
+/* ==== Projects ==== */
 .project {
   margin-bottom: 30px;
-  background: #ffffff;
+  background: #111111;
   padding: 20px;
-  border-left: 4px solid #007acc;
-  border-radius: 4px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  border-left: 4px solid #00b7ff;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }
 
 .project h3 {
   margin-top: 0;
+  color: #ffffff;
 }
 
 .project a {
-  color: #007acc;
+  color: #00b7ff;
   text-decoration: none;
   font-weight: bold;
 }
 
 .project a:hover {
   text-decoration: underline;
+  color: #4fc3f7;
 }
 
-/* Contact */
-.contact p {
-  margin-bottom: 10px;
+/* ==== Contact ==== */
+.contact a {
+  color: #00b7ff;
 }
 
-/* Footer */
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* ==== Footer ==== */
 footer {
   text-align: center;
   margin-top: 60px;
   padding: 20px 0;
   font-size: 0.9rem;
-  color: #888;
+  color: #777;
 }
 
-/* Particles Background */
+/* ==== Particles Background ==== */
 #particles-js {
   position: fixed;
   width: 100%;
@@ -131,4 +153,25 @@ footer {
   z-index: 0;
   top: 0;
   left: 0;
+  background-color: #000000;
+}
+
+/* ==== Responsive ==== */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+  }
 }
