@@ -3,106 +3,93 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aadarsh | Portfolio</title>
+  <title>Aadarsh CJ | Data Science Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
-  <!-- particles.js library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
 <body>
 
-  <!-- Background Particle Canvas -->
+  <!-- Particles Background -->
   <div id="particles-js"></div>
 
-  <!-- Main Content Wrapper -->
-  <div class="content">
+  <div class="container">
+    <!-- Header Section -->
     <header>
-      <h1>Aadarsh Chandrakumar Jiji Rani</h1>
-      <p>Aspiring IT Professional | Data Science | Python</p>
-
-      <!-- TODO: Upload profile.jpg -->
-      <div style="text-align: center;">
-        <img src="profile.jpg" alt="Aadarsh Profile Picture" class="profile-pic" />
+      <img src="profile.jpg" alt="Aadarsh CJ" class="profile-pic" />
+      <h1>Hi, I'm Aadarsh 👋</h1>
+      <p>An aviation engineer turned aspiring data scientist. I love solving problems using Python, ML, and automation. Let me show you what I've built!</p>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/aadarsh-chandrakumar-jiji-rani" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Adhu316" target="_blank"><i class="fab fa-github"></i></a>
       </div>
     </header>
 
-    <section id="about">
+    <!-- About Section -->
+    <section class="about">
       <h2>About Me</h2>
       <p>
-        I am an aviation engineering graduate transitioning into the IT industry,
-        currently training in data science and machine learning. I love solving
-        problems, building projects, and exploring AI tools.
+        I'm an aviation engineering graduate transitioning into the IT world with a growing passion for data science and automation.
+        I enjoy solving real-world problems using Python, machine learning, and analytics.
+        I've built hands-on projects like churn prediction and AI-based course recommenders — and I'm always exploring new tools in tech and AI.
       </p>
     </section>
 
-    <section id="tech-stack">
-      <h2>Tech Stack</h2>
-      <p>🧠 Python | 📊 Pandas | 🔍 Scikit-learn | 💡 NumPy | 🌐 Flask | 🕸️ Selenium | 💻 HTML/CSS</p>
-    </section>
-
-    <section id="skills">
-      <h2>Skills</h2>
+    <!-- Timeline Section -->
+    <section class="timeline">
+      <h2>Timeline</h2>
       <ul>
-        <li>Python, Pandas, NumPy, Scikit-learn</li>
-        <li>Data Analysis, Machine Learning, Data Visualization</li>
-        <li>HTML, CSS, Selenium, Jupyter Notebook, Excel</li>
+        <li><strong>2025</strong> – Data Science Certification (ICT Academy)</li>
+        <li><strong>2022</strong> – Machine Operator at Dinair Filton, Latvia</li>
+        <li><strong>2021</strong> – Assistant Manager at Delisnacks, Riga</li>
+        <li><strong>2019</strong> – Owner/Manager, Shawarmas Restaurant, Latvia</li>
+        <li><strong>2018</strong> – Trainee Mechanic at Riga Airport</li>
+        <li><strong>2016</strong> – Travel Agent, International Travel Network</li>
+        <li><strong>2020</strong> – Graduated Bachelors in Aviation Transport (TSI Riga)</li>
       </ul>
     </section>
 
-    <section id="certifications">
-      <h2>Certifications</h2>
-      <p>ICT Academy Data Science Training (Ongoing)</p>
-      <p><a href="https://drive.google.com/drive/folders/1T7nUnrwtW1XhHO9Dnms5rS8X3P1a_POb" target="_blank">View LinkedIn Learning Certificates</a></p>
-    </section>
-
-    <section id="projects">
+    <!-- Projects Section -->
+    <section class="projects">
       <h2>Projects</h2>
 
-      <div class="project-card">
+      <div class="project">
         <h3>Customer Churn Prediction</h3>
-        <p>Machine Learning model to predict user churn using logistic regression and decision trees.</p>
-        <!-- TODO: Add churn model graph image -->
-        <img src="images/churn_output.png" alt="Churn Model Output" class="project-img" />
-        <a href="https://github.com/Adhu316/Project-CustomerChurn-1" target="_blank" class="button">GitHub Repo</a>
-        <details>
-          <summary>More About This Project</summary>
-          <p>Worked on preprocessing, model training, evaluation, and insights visualization using pandas, scikit-learn, and seaborn.</p>
-        </details>
+        <p>Machine learning project predicting e-commerce customer churn using logistic regression, decision trees and feature engineering.</p>
+        <a href="https://github.com/Adhu316/Project-CustomerChurn-1" target="_blank">GitHub Repo</a>
       </div>
 
-      <div class="project-card">
-        <h3>Course Recommendation Engine</h3>
-        <p>Built a GenAI-powered learning path recommender using Python, Selenium, and Flask.</p>
-        <!-- TODO: Add recommender system UI screenshot -->
-        <img src="images/recommender_ui.png" alt="Recommendation Engine UI" class="project-img" />
-        <a href="https://github.com/Adhu316/Coursera_Course-_recommendation-" target="_blank" class="button">GitHub Repo</a>
-        <details>
-          <summary>More About This Project</summary>
-          <p>This project includes web scraping, preprocessing, NLP-based recommendation logic, and Streamlit-based front-end.</p>
-        </details>
+      <div class="project">
+        <h3>AI-Powered Course Recommender</h3>
+        <p>Python + Selenium + Flask project to suggest personalized learning paths using scraped Coursera data.</p>
+        <a href="https://github.com/Adhu316/Coursera_Course-_recommendation-" target="_blank">GitHub Repo</a>
+      </div>
+
+      <div class="project">
+        <h3>Engineering Failure Analysis</h3>
+        <p>Stress and failure analysis of aircraft landing gear using finite element methods.</p>
+        <!-- You can add GitHub repo if available -->
       </div>
     </section>
 
-    <section id="contact">
+    <!-- Contact Section -->
+    <section class="contact">
       <h2>Contact</h2>
-      <p><i class="fas fa-envelope"></i> <a href="mailto:aadarshcj1997@gmail.com">aadarshcj1997@gmail.com</a></p>
-      <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/aadarsh-chandrakumar-jiji-rani" target="_blank">LinkedIn</a></p>
-      <p><i class="fab fa-github"></i> <a href="https://github.com/Adhu316" target="_blank">GitHub</a></p>
-      <p><i class="fas fa-file-pdf"></i> <a href="resume.pdf" target="_blank">View My Resume (PDF)</a></p>
+      <p>Email: <a href="mailto:aadarshcj1997@gmail.com">aadarshcj1997@gmail.com</a></p>
+      <p>Phone: +91 8075801062</p>
+      <p>Location: Thiruvananthapuram, Kerala, India</p>
     </section>
 
+    <!-- Footer -->
     <footer>
-      <p>&copy; 2025 Aadarsh. All rights reserved.</p>
+      <p>&copy; 2025 Aadarsh CJ. Built with ❤️ using HTML, CSS & particles.js</p>
     </footer>
   </div>
 
-  <!-- Initialize Particle Background -->
+  <!-- Initialize particles.js -->
   <script>
-    particlesJS.load('particles-js', 'particles-config.json', function() {
-      console.log('🎉 particles.js loaded!');
+    particlesJS.load('particles-js', 'particles-config.json', function () {
+      console.log('✨ particles.js loaded');
     });
   </script>
 </body>
