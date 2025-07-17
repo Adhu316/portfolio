@@ -1,47 +1,134 @@
-/* Profile Picture */
+/* General Layout */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  background-color: #f9f9f9;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Profile */
 .profile-pic {
-  width: 140px;
-  height: 140px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
-  border: 4px solid white;
-  margin-top: 20px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  margin: 20px auto;
+  display: block;
 }
 
-/* Project Cards */
-.project-card {
-  background-color: #f3f4f6;
-  padding: 20px;
-  border-radius: 12px;
+header {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+header h1 {
+  margin: 10px 0 0;
+  font-size: 2.2rem;
+}
+
+header p {
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #555;
+}
+
+.socials a {
+  margin: 0 10px;
+  color: #333;
+  font-size: 1.4rem;
+  transition: color 0.3s ease;
+}
+
+.socials a:hover {
+  color: #0072b1; /* LinkedIn blue */
+}
+
+/* Sections */
+section {
+  margin-top: 50px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+}
+
+.timeline ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.timeline li {
+  margin-bottom: 10px;
+  padding-left: 15px;
+  position: relative;
+}
+
+.timeline li::before {
+  content: \"•\";
+  position: absolute;
+  left: 0;
+  color: #007acc;
+}
+
+/* Projects */
+.project {
   margin-bottom: 30px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  background: #ffffff;
+  padding: 20px;
+  border-left: 4px solid #007acc;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
-.project-card h3 {
+
+.project h3 {
   margin-top: 0;
-  color: #111827;
 }
 
-/* Project Images */
-.project-img {
+.project a {
+  color: #007acc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+/* Contact */
+.contact p {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 60px;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Particles Background */
+#particles-js {
+  position: fixed;
   width: 100%;
-  max-width: 600px;
-  border-radius: 8px;
-  margin-top: 10px;
-}
-
-/* Summary Toggle */
-details summary {
-  cursor: pointer;
-  color: #3b82f6;
-  font-weight: 500;
-  margin-top: 10px;
-}
-
-details p {
-  margin-top: 10px;
-}
-
-/* Smooth Scrolling */
-html {
-  scroll-behavior: smooth;
+  height: 100%;
+  z-index: 0;
+  top: 0;
+  left: 0;
 }
