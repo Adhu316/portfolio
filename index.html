@@ -8,85 +8,102 @@
 
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- particles.js library -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
 <body>
-  <header>
-    <h1>Aadarsh Chandrakumar Jiji Rani</h1>
-    <p>Aspiring IT Professional | Data Science | Python</p>
-    
-    <!-- TODO: Upload profile.jpg to your GitHub repo -->
-    <img src="profile.jpg" alt="Aadarsh Profile Picture" class="profile-pic" />
-  </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I am an aviation engineering graduate transitioning into the IT industry,
-      currently training in data science and machine learning. I love solving
-      problems, building projects, and exploring AI tools.
-    </p>
-  </section>
+  <!-- Background Particle Canvas -->
+  <div id="particles-js"></div>
 
-  <section id="tech-stack">
-    <h2>Tech Stack</h2>
-    <p>🧠 Python | 📊 Pandas | 🔍 Scikit-learn | 💡 NumPy | 🌐 Flask | 🕸️ Selenium | 💻 HTML/CSS</p>
-  </section>
+  <!-- Main Content Wrapper -->
+  <div class="content">
+    <header>
+      <h1>Aadarsh Chandrakumar Jiji Rani</h1>
+      <p>Aspiring IT Professional | Data Science | Python</p>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Python, Pandas, NumPy, Scikit-learn</li>
-      <li>Data Analysis, Machine Learning, Data Visualization</li>
-      <li>HTML, CSS, Selenium, Jupyter Notebook, Excel</li>
-    </ul>
-  </section>
+      <!-- TODO: Upload profile.jpg -->
+      <div style="text-align: center;">
+        <img src="profile.jpg" alt="Aadarsh Profile Picture" class="profile-pic" />
+      </div>
+    </header>
 
-  <section id="certifications">
-    <h2>Certifications</h2>
-    <p>ICT Academy Data Science Training (Ongoing)</p>
-    <p><a href="https://drive.google.com/drive/folders/1T7nUnrwtW1XhHO9Dnms5rS8X3P1a_POb" target="_blank">View LinkedIn Learning Certificates</a></p>
-  </section>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am an aviation engineering graduate transitioning into the IT industry,
+        currently training in data science and machine learning. I love solving
+        problems, building projects, and exploring AI tools.
+      </p>
+    </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
+    <section id="tech-stack">
+      <h2>Tech Stack</h2>
+      <p>🧠 Python | 📊 Pandas | 🔍 Scikit-learn | 💡 NumPy | 🌐 Flask | 🕸️ Selenium | 💻 HTML/CSS</p>
+    </section>
 
-    <div class="project-card">
-      <h3>Customer Churn Prediction</h3>
-      <p>Machine Learning model to predict user churn using logistic regression and decision trees.</p>
-      <!-- TODO: Add image of model output or visualization -->
-      <img src="images/churn_output.png" alt="Churn Output" class="project-img" />
-      <a href="https://github.com/Adhu316/Project-CustomerChurn-1" target="_blank" class="button">GitHub Repo</a>
-      <details>
-        <summary>More About This Project</summary>
-        <p>Worked on preprocessing, model training, evaluation, and insights visualization using pandas, scikit-learn, and seaborn.</p>
-      </details>
-    </div>
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Python, Pandas, NumPy, Scikit-learn</li>
+        <li>Data Analysis, Machine Learning, Data Visualization</li>
+        <li>HTML, CSS, Selenium, Jupyter Notebook, Excel</li>
+      </ul>
+    </section>
 
-    <div class="project-card">
-      <h3>Course Recommendation Engine</h3>
-      <p>Built a GenAI-powered learning path recommender using Python, Selenium, and Flask.</p>
-      <!-- TODO: Add screenshot of recommendation UI -->
-      <img src="images/recommender_ui.png" alt="Recommendation Engine UI" class="project-img" />
-      <a href="https://github.com/Adhu316/Coursera_Course-_recommendation-" target="_blank" class="button">GitHub Repo</a>
-      <details>
-        <summary>More About This Project</summary>
-        <p>This project includes web scraping, preprocessing, NLP-based recommendation logic, and Streamlit-based front-end.</p>
-      </details>
-    </div>
-  </section>
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <p>ICT Academy Data Science Training (Ongoing)</p>
+      <p><a href="https://drive.google.com/drive/folders/1T7nUnrwtW1XhHO9Dnms5rS8X3P1a_POb" target="_blank">View LinkedIn Learning Certificates</a></p>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p><i class="fas fa-envelope"></i> <a href="mailto:aadarshcj1997@gmail.com">aadarshcj1997@gmail.com</a></p>
-    <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/aadarsh-chandrakumar-jiji-rani" target="_blank">LinkedIn</a></p>
-    <p><i class="fab fa-github"></i> <a href="https://github.com/Adhu316" target="_blank">GitHub</a></p>
+    <section id="projects">
+      <h2>Projects</h2>
 
-    <!-- TODO: Replace download link with view if needed -->
-    <p><i class="fas fa-file-pdf"></i> <a href="resume.pdf" target="_blank">View My Resume (PDF)</a></p>
-  </section>
+      <div class="project-card">
+        <h3>Customer Churn Prediction</h3>
+        <p>Machine Learning model to predict user churn using logistic regression and decision trees.</p>
+        <!-- TODO: Add churn model graph image -->
+        <img src="images/churn_output.png" alt="Churn Model Output" class="project-img" />
+        <a href="https://github.com/Adhu316/Project-CustomerChurn-1" target="_blank" class="button">GitHub Repo</a>
+        <details>
+          <summary>More About This Project</summary>
+          <p>Worked on preprocessing, model training, evaluation, and insights visualization using pandas, scikit-learn, and seaborn.</p>
+        </details>
+      </div>
 
-  <footer>
-    <p>&copy; 2025 Aadarsh. All rights reserved.</p>
-  </footer>
+      <div class="project-card">
+        <h3>Course Recommendation Engine</h3>
+        <p>Built a GenAI-powered learning path recommender using Python, Selenium, and Flask.</p>
+        <!-- TODO: Add recommender system UI screenshot -->
+        <img src="images/recommender_ui.png" alt="Recommendation Engine UI" class="project-img" />
+        <a href="https://github.com/Adhu316/Coursera_Course-_recommendation-" target="_blank" class="button">GitHub Repo</a>
+        <details>
+          <summary>More About This Project</summary>
+          <p>This project includes web scraping, preprocessing, NLP-based recommendation logic, and Streamlit-based front-end.</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p><i class="fas fa-envelope"></i> <a href="mailto:aadarshcj1997@gmail.com">aadarshcj1997@gmail.com</a></p>
+      <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/aadarsh-chandrakumar-jiji-rani" target="_blank">LinkedIn</a></p>
+      <p><i class="fab fa-github"></i> <a href="https://github.com/Adhu316" target="_blank">GitHub</a></p>
+      <p><i class="fas fa-file-pdf"></i> <a href="resume.pdf" target="_blank">View My Resume (PDF)</a></p>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Aadarsh. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <!-- Initialize Particle Background -->
+  <script>
+    particlesJS.load('particles-js', 'particles-config.json', function() {
+      console.log('🎉 particles.js loaded!');
+    });
+  </script>
 </body>
 </html>
