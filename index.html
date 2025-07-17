@@ -3,94 +3,169 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aadarsh CJ | Data Science Portfolio</title>
+  <title>Aadarsh CJ | Data Scientist Portfolio</title>
+
+  <!-- CSS Libraries -->
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- JS Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
 
-  <!-- Particles Background -->
-  <div id="particles-js"></div>
-
-  <div class="container">
-    <!-- Header Section -->
-    <header>
-      <img src="profile.jpg" alt="Aadarsh CJ" class="profile-pic" />
-      <h1>Hi, I'm Aadarsh 👋</h1>
-      <p>An aviation engineer turned aspiring data scientist. I love solving problems using Python, ML, and automation. Let me show you what I've built!</p>
-      <div class="socials">
-        <a href="https://www.linkedin.com/in/aadarsh-chandrakumar-jiji-rani" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/Adhu316" target="_blank"><i class="fab fa-github"></i></a>
+<body id="page-top">
+  <!-- 🌐 FLOATING NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">AADARSH CJ</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#description">Intro</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+        </ul>
       </div>
-    </header>
+    </div>
+  </nav>
 
-    <!-- About Section -->
-    <section class="about">
-      <h2>About Me</h2>
-      <p>
-        I'm an aviation engineering graduate transitioning into the IT world with a growing passion for data science and automation.
-        I enjoy solving real-world problems using Python, machine learning, and analytics.
-        I've built hands-on projects like churn prediction and AI-based course recommenders — and I'm always exploring new tools in tech and AI.
-      </p>
-    </section>
-
-    <!-- Timeline Section -->
-    <section class="timeline">
-      <h2>Timeline</h2>
-      <ul>
-        <li><strong>2025</strong> – Data Science Certification (ICT Academy)</li>
-        <li><strong>2022</strong> – Machine Operator at Dinair Filton, Latvia</li>
-        <li><strong>2021</strong> – Assistant Manager at Delisnacks, Riga</li>
-        <li><strong>2019</strong> – Owner/Manager, Shawarmas Restaurant, Latvia</li>
-        <li><strong>2018</strong> – Trainee Mechanic at Riga Airport</li>
-        <li><strong>2016</strong> – Travel Agent, International Travel Network</li>
-        <li><strong>2020</strong> – Graduated Bachelors in Aviation Transport (TSI Riga)</li>
+  <!-- 🌌 HERO SECTION -->
+  <header class="masthead">
+    <div id="particles-js"></div>
+    <div class="textlanding text-center">
+      <p style="display:inline; font-size: 35px;">AADARSH</p>
+      <img width="80px" style="display:inline; margin: 0 10px; margin-bottom: 20px" src="profile.jpg" alt="Profile">
+      <p style="display:inline; font-size: 35px;">CJ</p>
+      <hr style="width: 100px; height: 1px; border:none; background-color: #fff;">
+      <ul class="list-inline social-buttons">
+        <li class="list-inline-item">
+          <a href="https://github.com/Adhu316" target="_blank"><i class="fab fa-github" style="color: white;"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://www.linkedin.com/in/aadarsh-chandrakumar-jiji-rani" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </li>
       </ul>
-    </section>
+      <p>👋 I'm a data science enthusiast with a background in aviation.<br> I build ML models, scrapers, and cool projects with Python & AI.</p>
+      <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#projects">View Projects</a>
+      <a class="btn btn-outline-light btn-xl text-uppercase js-scroll-trigger" href="#contact">Contact</a>
+    </div>
+    <div class="arrowlanding text-center">
+      <a class="js-scroll-trigger" href="#description"><p style="font-size: 80px; color: #69b3a2">﹀</p></a>
+    </div>
+  </header>
 
-    <!-- Projects Section -->
-    <section class="projects">
-      <h2>Projects</h2>
-
-      <div class="project">
-        <h3>Customer Churn Prediction</h3>
-        <p>Machine learning project predicting e-commerce customer churn using logistic regression, decision trees and feature engineering.</p>
-        <a href="https://github.com/Adhu316/Project-CustomerChurn-1" target="_blank">GitHub Repo</a>
+  <!-- 🧠 DESCRIPTION SECTION -->
+  <section id="description" class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 text-center">
+          <img class="img-fluid rounded-circle mb-4" src="profile.jpg" alt="Aadarsh CJ" style="max-width: 250px;">
+        </div>
+        <div class="col-lg-8 text-center text-md-left">
+          <p>Hi, I'm Aadarsh 👋</p>
+          <p>I'm an aviation engineering graduate transitioning into the data world. I specialize in Python, ML, data scraping, and building AI-powered apps.</p>
+          <p>I’ve worked as a CNC operator, managed a restaurant, and helped teams run smoother — now I solve real-world problems using data and code.</p>
+          <a class="btn btn-outline-light btn-sm text-uppercase" href="resume.pdf" target="_blank">Resume</a>
+          <a class="btn btn-outline-light btn-sm text-uppercase" href="https://github.com/Adhu316" target="_blank">GitHub</a>
+          <a class="btn btn-outline-light btn-sm text-uppercase" href="https://www.linkedin.com/in/aadarsh-chandrakumar-jiji-rani" target="_blank">LinkedIn</a>
+        </div>
       </div>
 
-      <div class="project">
-        <h3>AI-Powered Course Recommender</h3>
-        <p>Python + Selenium + Flask project to suggest personalized learning paths using scraped Coursera data.</p>
-        <a href="https://github.com/Adhu316/Coursera_Course-_recommendation-" target="_blank">GitHub Repo</a>
+      <!-- Timeline -->
+      <div class="row d-none d-lg-block pt-5">
+        <div class="col-lg-12 text-center">
+          <svg width="1000" height="100">
+            <line x1="0" y1="50" x2="1000" y2="50" style="stroke:white; stroke-width:1.5"></line>
+            <circle cx="100" cy="50" r="10" stroke="white" stroke-width="4" fill="#69b3a2"></circle>
+            <text x="100" y="80" text-anchor="middle" fill="white">2016</text><text x="100" y="30" text-anchor="middle" font-size="12" fill="#aaa">Travel Agent</text>
+            <circle cx="250" cy="50" r="10" stroke="white" stroke-width="4" fill="#69b3a2"></circle>
+            <text x="250" y="80" text-anchor="middle" fill="white">2018</text><text x="250" y="30" text-anchor="middle" font-size="12" fill="#aaa">Trainee Mechanic</text>
+            <circle cx="400" cy="50" r="10" stroke="white" stroke-width="4" fill="#69b3a2"></circle>
+            <text x="400" y="80" text-anchor="middle" fill="white">2019</text><text x="400" y="30" text-anchor="middle" font-size="12" fill="#aaa">Restaurant Owner</text>
+            <circle cx="550" cy="50" r="10" stroke="white" stroke-width="4" fill="#69b3a2"></circle>
+            <text x="550" y="80" text-anchor="middle" fill="white">2021</text><text x="550" y="30" text-anchor="middle" font-size="12" fill="#aaa">Manager</text>
+            <circle cx="700" cy="50" r="10" stroke="white" stroke-width="4" fill="#69b3a2"></circle>
+            <text x="700" y="80" text-anchor="middle" fill="white">2022</text><text x="700" y="30" text-anchor="middle" font-size="12" fill="#aaa">Machine Operator</text>
+            <circle cx="850" cy="50" r="10" stroke="white" stroke-width="4" fill="#69b3a2"></circle>
+            <text x="850" y="80" text-anchor="middle" fill="white">2025</text><text x="850" y="30" text-anchor="middle" font-size="12" fill="#aaa">Data Scientist</text>
+          </svg>
+        </div>
       </div>
+    </div>
+  </section>
 
-      <div class="project">
-        <h3>Engineering Failure Analysis</h3>
-        <p>Stress and failure analysis of aircraft landing gear using finite element methods.</p>
-        <!-- You can add GitHub repo if available -->
+<!-- 📁 PROJECTS SECTION -->
+<section id="projects" class="py-5 bg-black text-white">
+  <div class="container">
+    <h2 class="text-center mb-4">Projects</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card bg-dark text-white h-100">
+          <img class="card-img-top" src="images/churn_model.png" alt="Churn Model">
+          <div class="card-body">
+            <h5 class="card-title">Customer Churn Prediction</h5>
+            <p class="card-text">Predicting churn using scikit-learn with logistic regression and decision trees.</p>
+            <a href="https://github.com/Adhu316/Project-CustomerChurn-1" class="btn btn-outline-light btn-sm" target="_blank">View Code</a>
+          </div>
+        </div>
       </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:aadarshcj1997@gmail.com">aadarshcj1997@gmail.com</a></p>
-      <p>Phone: +91 8075801062</p>
-      <p>Location: Thiruvananthapuram, Kerala, India</p>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2025 Aadarsh CJ. Built with ❤️ using HTML, CSS & particles.js</p>
-    </footer>
+      <div class="col-md-4 mb-4">
+        <div class="card bg-dark text-white h-100">
+          <img class="card-img-top" src="images/recommendation_ui.png" alt="Course Recommender">
+          <div class="card-body">
+            <h5 class="card-title">Course Recommendation Engine</h5>
+            <p class="card-text">Flask app that suggests online courses using scraped Coursera data.</p>
+            <a href="https://github.com/Adhu316/Coursera_Course-_recommendation-" class="btn btn-outline-light btn-sm" target="_blank">View Code</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card bg-dark text-white h-100">
+          <img class="card-img-top" src="images/landing_gear.png" alt="Landing Gear Analysis">
+          <div class="card-body">
+            <h5 class="card-title">Failure Analysis of Aircraft Gear</h5>
+            <p class="card-text">Finite element stress analysis of a nose landing gear fork during load testing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+</section>
 
-  <!-- Initialize particles.js -->
-  <script>
-    particlesJS.load('particles-js', 'particles-config.json', function () {
-      console.log('✨ particles.js loaded');
-    });
-  </script>
+<!-- 📞 CONTACT -->
+<section id="contact" class="bg-dark text-white py-5">
+  <div class="container text-center">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:aadarshcj1997@gmail.com">aadarshcj1997@gmail.com</a></p>
+    <p>Phone: +91 8075801062</p>
+    <p>Location: Thiruvananthapuram, Kerala, India</p>
+  </div>
+</section>
+
+<!-- 🔚 FOOTER -->
+<footer class="text-center py-3 text-muted bg-black">
+  <p>&copy; 2025 Aadarsh CJ | Built with ❤️ using HTML, CSS, and Bootstrap</p>
+</footer>
+
+<!-- 🎉 particles.js init -->
+<script>
+  particlesJS.load('particles-js', 'particles-config.json', function () {
+    console.log('✨ particles.js loaded');
+  });
+
+  // Sticky nav color change on scroll
+  $(window).scroll(function () {
+    if ($("#mainNav").offset().top > 50) {
+      $("#mainNav").addClass("bg-black");
+    } else {
+      $("#mainNav").removeClass("bg-black");
+    }
+  });
+</script>
 </body>
 </html>
